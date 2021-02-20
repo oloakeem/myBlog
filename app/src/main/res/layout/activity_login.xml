@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:textColor="#9C3F3F"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:text="myBlog"
+        android:textSize="42dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/loginEmailEditTxt"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/appImageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:text="abc123@gmail.com"
+        android:layout_centerInParent="true"
+        android:hint="Email"
+        android:id="@+id/loginEmailEditTxt"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+
+    <EditText
+        android:text="password"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/loginEmailEditTxt"
+        android:hint="Password"
+        android:id="@+id/loginPassWordEditTxt"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:textColor="#fff"
+        android:text="@string/login_button"
+        android:backgroundTint="#AE4040"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginPassWordEditTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:textSize="24sp"
+        android:text="Click here to Sign up"
+        android:id="@+id/signUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>

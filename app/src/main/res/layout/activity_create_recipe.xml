@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateRecipeActivity">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:id="@+id/authorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+<EditText
+    android:hint="Enter Title"
+    android:layout_below="@id/authorTextView"
+    android:id="@+id/recipeTitleEditTxt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</EditText>
+    <FrameLayout
+        android:id="@+id/imageFrame"
+        android:layout_margin="25dp"
+        android:layout_below="@id/recipeTitleEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+    <ImageView
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_baseline_add_a_photo_24"
+        android:id="@+id/recipeImages"
+        android:layout_width="100dp"
+        android:layout_height="100dp"></ImageView>
+
+    <Button
+        android:background="@drawable/ic_baseline_add_circle_24"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/recipeImages"
+        android:id="@+id/addrecipeImageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"></Button>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_below="@id/imageFrame"
+        android:id="@+id/stepsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/steps"
+                android:text="Brief Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/sampleText"
+                android:layout_below="@id/steps"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"></TextView>
+        </RelativeLayout>
+    </FrameLayout>
+    <EditText
+        android:textAlignment="center"
+        android:layout_below="@id/stepsFrame"
+        android:hint="Enter description here."
+        android:id="@+id/recipeIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <Button
+        android:text="Submit"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/submitRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">myBlog</string>
+    <string name="login_button">Login</string>
+    <string name="title_activity_bottom_base_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_settings">Settings</string>
+
+</resources>

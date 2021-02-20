@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/user_image_item"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+            </ImageView>
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/user_image_item"
+                android:id="@+id/user_title_item"
+                android:layout_width="150dp"
+                android:layout_height="35dp">
+
+            </TextView>
+
+            <FrameLayout
+                android:layout_toRightOf="@id/user_title_item"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/editorFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_margin="5dp"
+                        android:text="E"
+                        android:id="@+id/editButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"></Button>
+                    <Button
+                        android:text="D"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@id/editButton"
+                        android:id="@+id/deleteButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"></Button>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

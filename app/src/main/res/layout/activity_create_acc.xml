@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccActivity">
+
+<ImageView
+    android:id="@+id/createAccBackImage"
+    android:layout_margin="10dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></ImageView>
+    <TextView
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/createAccBackImage"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/createAccText"
+        android:textSize="30dp"
+        android:text="Create Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/createAccText"
+        android:id="@+id/signUpUsernameEditText"
+        android:hint="UserName"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+    <EditText
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/signUpUsernameEditText"
+        android:id="@+id/signUpEmailEditText"
+        android:hint="Email"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+    <EditText
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/signUpEmailEditText"
+        android:id="@+id/signUpPasswordEditText"
+        android:hint="Password"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+    <EditText
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/signUpPasswordEditText"
+        android:id="@+id/signUpConfirmPEditText"
+        android:hint="Confirm Password"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></EditText>
+
+    <Button
+        android:text="Create Account"
+        android:backgroundTint="#18A35A"
+        android:layout_margin="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/createAccButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>
