@@ -8,7 +8,10 @@
 
 ## What I learned
 -Built a stronger knowledge of Firebase authentication 
+
 -Built a stronger knowledge of Firebase Database
+
 -Built a stronger knowledge of Firebase Storage
+
 ## Status
 - Incomplete 
